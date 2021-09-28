@@ -2,7 +2,7 @@
 
 This bundle adds a new action to maximize a popup.
 
-![Screenshot App](https://github.com/conterra/mapapps-popups-actions-maximize/blob/master/screenshot.JPG)
+![Screenshot App](https://github.com/conterra/mapapps-popups-action-maximize/blob/master/screenshot.JPG)
 
 ## Sample App
 https://demos.conterra.de/mapapps/resources/apps/downloads_popupsactionsmaximize/index.html
@@ -11,7 +11,7 @@ https://demos.conterra.de/mapapps/resources/apps/downloads_popupsactionsmaximize
 
 Simply add the bundle "dn_popups-action-maximize" to your app.
 
-[dn_popups-action-maximize Documentation](https://github.com/conterra/mapapps-popups-actions-maximize/tree/master/src/main/js/bundles/dn_popups-action-maximize)
+[dn_popups-action-maximize Documentation](https://github.com/conterra/mapapps-popups-action-maximize/tree/master/src/main/js/bundles/dn_popups-action-maximize)
 
 ## Development Guide
 ### Define the mapapps remote base
