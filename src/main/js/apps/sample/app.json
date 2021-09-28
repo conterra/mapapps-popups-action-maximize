@@ -36,7 +36,7 @@
             "omnisearch",
             "locator-store",
             "toc",
-            "sample_helloworld"
+            "dn_popups-action-maximize"
         ],
         "require": [
             "${app}.app"
@@ -46,6 +46,27 @@
         ]
     },
     "bundles": {
+        "popups": {
+            "Config": {
+                "defaultPopupType": "default",
+                "defaultPopupEnabled": true,
+                "highlightEnabled": true,
+                "autoCloseEnabled": false,
+                "collapseEnabled": false,
+                "maxInlineActions": 3,
+                "visibleElements": {
+                    "featureNavigation": true,
+                    "closeButton": true
+                },
+                "includeDefaultActions": true,
+                "dockingForced": false,
+                "dockingDisabled": false,
+                "dockEnabled": false,
+                "dockPosition": "auto",
+                "dockButtonEnabled": true,
+                "dockBreakpoint": true
+            }
+        },
         "banner": {
             "BannerWidget": {
                 "label": "Developer Network",
@@ -174,6 +195,9 @@
                                     "visible": true,
                                     "popupTemplate": {
                                         "title": "{NAME_LANG}",
+                                        "customActions": [
+                                            "maximize"
+                                        ],
                                         "content": [
                                             {
                                                 "type": "fields",
@@ -202,6 +226,9 @@
                                     "visible": true,
                                     "popupTemplate": {
                                         "title": "Museum",
+                                        "customActions": [
+                                            "maximize"
+                                        ],
                                         "content": [
                                             {
                                                 "type": "text",
@@ -235,6 +262,9 @@
                                     "visible": false,
                                     "popupTemplate": {
                                         "title": "{NAME}",
+                                        "customActions": [
+                                            "maximize"
+                                        ],
                                         "content": [
                                             {
                                                 "type": "fields",
@@ -274,6 +304,9 @@
                                     "type": "AGS_FEATURE",
                                     "popupTemplate": {
                                         "title": "${map.koeln3.sights.titleSingle}",
+                                        "customActions": [
+                                            "maximize"
+                                        ],
                                         "content": [
                                             {
                                                 "type": "text",
@@ -306,6 +339,9 @@
                                     "visible": false,
                                     "popupTemplate": {
                                         "title": "{Typ}",
+                                        "customActions": [
+                                            "maximize"
+                                        ],
                                         "content": [
                                             {
                                                 "type": "text",
@@ -320,6 +356,9 @@
                                     "type": "AGS_FEATURE",
                                     "popupTemplate": {
                                         "title": "${map.koeln3.places.titleSingle}",
+                                        "customActions": [
+                                            "maximize"
+                                        ],
                                         "content": [
                                             {
                                                 "type": "text",
@@ -361,6 +400,9 @@
                                     "opacity": 0.5,
                                     "popupTemplate": {
                                         "title": "{STV_NAME}",
+                                        "customActions": [
+                                            "maximize"
+                                        ],
                                         "content": [
                                             {
                                                 "type": "text",
@@ -377,6 +419,9 @@
                                     "minScale": 80000,
                                     "popupTemplate": {
                                         "title": "{NAME}",
+                                        "customActions": [
+                                            "maximize"
+                                        ],
                                         "content": [
                                             {
                                                 "type": "text",
@@ -424,6 +469,9 @@
                                     "maxScale": 80000,
                                     "popupTemplate": {
                                         "title": "{NAME}",
+                                        "customActions": [
+                                            "maximize"
+                                        ],
                                         "content": [
                                             {
                                                 "type": "text",
@@ -542,7 +590,7 @@
         },
         "toc": {
             "Config": {
-                "showBasemaps" : true
+                "showBasemaps": true
             }
         },
         "toolset": {

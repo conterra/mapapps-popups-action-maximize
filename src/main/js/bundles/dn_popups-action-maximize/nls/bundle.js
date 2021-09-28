@@ -14,10 +14,13 @@
  * limitations under the License.
  */
 module.exports = {
-    root: {
-        bundleName: "Hello World",
-        bundleDescription: "This bundle prints Hello.",
-        hello: "Hello World"
-    },
-    de: true
+    root: ({
+        bundleName: "Popups Action Maximize",
+        bundleDescription: "This bundle adds a new action to maximize a popup.",
+        ui: {
+            maximize: "Maximize",
+            minimize: "Minimize"
+        }
+    }),
+    "de": true
 };
