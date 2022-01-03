@@ -22,11 +22,12 @@ export default class PopupsMaximizeActionFactory {
         const i18n = this._i18n.get().ui;
         const that = this;
         const popupsConfig = this._popupsConfig;
+        const properties = this._properties;
         return {
-            id: "maximize_action",
+            id: properties.id,
             type: "button",
-            title: "Maximieren",
-            className: "esri-icon-maximize",
+            title: i18n.maximize,
+            className: properties.iconClass,
             trigger(context) {
                 const popup = that._mapWidgetModel.view.popup;
                 const visibleWatcher = popup.watch("visible", (value) => {
@@ -60,7 +61,7 @@ export default class PopupsMaximizeActionFactory {
     }
 
     getTypes() {
-        return ["maximize"];
+        return [this._properties.id];
     }
 
 }
