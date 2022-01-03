@@ -1,4 +1,4 @@
-# dn_printingenhanced
+# dn_popups-action-maximize
 
 This bundle adds a new action to maximize a popup.
 
