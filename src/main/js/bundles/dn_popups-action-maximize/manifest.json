@@ -4,7 +4,7 @@
     "title": "${bundleName}",
     "description": "${bundleDescription}",
     "vendor": "con terra GmbH",
-    "productName": "mapapps-popups-action-maximize",
+    "productName": "devnet-mapapps-popups-action-maximize",
     "dependencies": {
         "map-widget": "^4.7.0",
         "popups": "^4.7.0"
