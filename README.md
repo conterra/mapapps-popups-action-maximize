@@ -2,7 +2,7 @@
 
 This bundle adds a new action to maximize a popup.
 
-![Screenshot App](https://github.com/conterra/mapapps-popups-action-maximize/blob/master/screenshot.JPG)
+![Screenshot App](https://github.com/conterra/mapapps-popups-action-maximize/blob/main/screenshot.JPG)
 
 ## Sample App
 https://demos.conterra.de/mapapps/resources/apps/downloads_popupsactionsmaximize/index.html
