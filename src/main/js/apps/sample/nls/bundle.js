@@ -15,7 +15,7 @@
  */
 module.exports = {
     root: {
-        apptitle: "DevNet Bundle Blueprint",
+        apptitle: "Popups Action Maximize Sample",
         map: {
             koeln1: {
                 title: "Basic Data",
