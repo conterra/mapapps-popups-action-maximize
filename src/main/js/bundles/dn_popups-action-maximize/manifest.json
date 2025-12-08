@@ -6,14 +6,15 @@
     "vendor": "con terra GmbH",
     "productName": "devnet-mapapps-popups-action-maximize",
     "dependencies": {
-        "map-widget": "^4.7.0",
-        "popups": "^4.7.0"
+        "popups": "^4.20.0",
+        "map-widget": "^4.20.0"
     },
     "layer": "module",
+    "main": "",
     "i18n": [
         "bundle"
     ],
-    "CSS-Themes-Extension": [
+    "cssThemesExtension": [
         {
             "name": "*",
             "files": [

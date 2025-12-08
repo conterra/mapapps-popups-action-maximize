@@ -1,5 +1,6 @@
 /.idea
 /.vs
+/.env
 **/nbactions.xml
 **/*.iml
 **/*.lnk
@@ -16,4 +17,3 @@
 /package-lock.json
 /gulpfile.overrides.js
 src/test/end-to-end/test/snapshots/local
-
