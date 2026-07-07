@@ -13,6 +13,9 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
+
+import * as reactiveUtils from "@arcgis/core/core/reactiveUtils";
+
 export default class PopupsMaximizeActionFactory {
 
     #maximize = false;
@@ -31,17 +34,30 @@ export default class PopupsMaximizeActionFactory {
             trigger(context) {
                 const popup = that._mapWidgetModel.view.popup;
                 const visibleWatcher = popup.watch("visible", (value) => {
-                    if(!value) {
+                    if (!value) {
                         visibleWatcher.remove();
+                        selectedFeatureWatcher.remove();
                         that.#maximize = false;
                         popupsConfig.dockingForced = that.#defaultDockingForced;
                         popupsConfig.applyTo(popup);
                     }
                 });
 
+                // watch for Change of the selectedFeature and apply the right title and className
+                const selectedFeatureWatcher = reactiveUtils.watch(() => popup?.selectedFeature, (event) => {
+                    // wait for next tick
+                    requestAnimationFrame(() => {
+                        if (that.#maximize) {
+                            popup.actions.items[0].title = 'Minimieren';
+                            popup.actions.items[0].className = 'esri-icon-minimize';
+                        }
+                    });
+
+                });
+
                 const element = document.querySelector(".esri-popup__main-container");
 
-                if(that.#maximize) {
+                if (that.#maximize) {
                     context.action.title = i18n.maximize;
                     context.action.className = "esri-icon-maximize";
                     element.classList.remove("maximize");
