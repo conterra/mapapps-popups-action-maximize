@@ -7,7 +7,8 @@
     "productName": "devnet-mapapps-popups-action-maximize",
     "dependencies": {
         "popups": "^4.20.0",
-        "map-widget": "^4.20.0"
+        "map-widget": "^4.20.0",
+        "@arcgis/core": "^4.33.0"
     },
     "layer": "module",
     "main": "",
