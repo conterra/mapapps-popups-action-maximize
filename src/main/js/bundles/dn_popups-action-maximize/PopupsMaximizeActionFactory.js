@@ -48,8 +48,10 @@ export default class PopupsMaximizeActionFactory {
                     // wait for next tick
                     requestAnimationFrame(() => {
                         if (that.#maximize) {
+                            const element = document.querySelector(".esri-popup__main-container");
                             popup.actions.items[0].title = 'Minimieren';
                             popup.actions.items[0].className = 'esri-icon-minimize';
+                            element.classList.add("maximize");
                         }
                     });
 
